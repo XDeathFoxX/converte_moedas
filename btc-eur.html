@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css" >
+    <link rel="stylesheet" href="/assets/css/moedas.css" >
+    <script async src="assets/js/btc-eur.js"></script>
+    <title>BTC-EUR</title>
+</head>
+<body onload="busca()">
+    <input type="text" id="pesquisa" >
+    <button id="btn-go">Pesquisar</button>
+    <section class="infos">
+        <h1>Cotação <span class="codes"><p id="code"></p> - <p id="codein"></p></span></h1>
+        <span>
+            <p> Pares de moedas :</p><p>&nbsp;<p id="name"></p></p>
+        </span>
+        <span>
+            <p>Maior valor :</p><p>&nbsp;€ &nbsp;<p id="high"></p></p>
+        </span>
+        <span>
+            <p>Menor valor:</p><p>&nbsp;€ &nbsp;<p id="low"></p></p>
+        </span>
+        <span>
+            <p>Valor de compra: </p><p>&nbsp;€ &nbsp;<p id="bid"></p></p>
+        </span>
+        <span>
+            <p>€ 1 é o equivalente á </p><p>&nbsp;₿ &nbsp;<p id="converte"></p></p>
+        </span>
+        <span class="conversao">
+            <input type="number" id="valor" name="valor"  placeholder="Digite aqui">
+            <button onclick="clique()">=</button>
+            <p>₿ <p id="valorconvertido"></p></p>
+        </span>
+        <span>
+            <p>Horário da cotação: </p><p>&nbsp;<p id="create_date"></p></p>
+        </span>
+    </section>
+</body>
+</html>
