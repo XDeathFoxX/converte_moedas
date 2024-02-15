@@ -1,6 +1,7 @@
 body {
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 .cardsMoedas {
@@ -12,11 +13,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: center;
     border: 1px solid black;
     margin: 1rem ;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    width: 15rem;
     background-color: #18DC3E;
     border-radius: 1rem;
 }
@@ -43,6 +44,12 @@ h1 {
     .cardsMoedas {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .cards {
+        padding-left:5rem;
+        padding-right:5rem;
+        width: 6rem;
     }
 
     h1 {

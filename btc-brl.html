@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/styles.css" >
-    <link rel="stylesheet" href="/assets/css/moedas.css" >
+    <link rel="stylesheet" href="assets/css/styles.css" >
+    <link rel="stylesheet" href="assets/css/moedas.css" >
+    <link rel="shortcut icon" href="assets/images/261778.png" >
     <script async src="assets/js/btc-brl.js"></script>
     <title>BTC-BRL</title>
 </head>
-<body onload="busca()">
-    <input type="text" id="pesquisa" >
-    <button id="btn-go">Pesquisar</button>
+<body>
+    <section class="pesquisa">
+        <input type="text" id="pesquisa" >
+        <button id="btn-go">Pesquisar</button>
+    </section>
     <section class="infos">
         <h1>Cotação <span class="codes"><p id="code"></p> - <p id="codein"></p></span></h1>
         <span>
-            <p> Pares de moedas :</p><p>&nbsp;<p id="name"></p></p>
+            <p> Pares de moedas :<p id="name"></p></p>
         </span>
         <span>
             <p>Maior valor :</p><p>&nbsp;R$ &nbsp;<p id="high"></p></p>
@@ -34,7 +37,7 @@
             <p>₿ <p id="valorconvertido"></p></p>
         </span>
         <span>
-            <p>Horário da cotação: </p><p>&nbsp;<p id="create_date"></p></p>
+            <p>Horário da cotação: </p><p id="create_date"></p>
         </span>
     </section>
 </body>

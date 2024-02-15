@@ -5,4 +5,11 @@ body {
     align-items: center;
     justify-items: center;
     background-color: aqua;
+    height: 100%;
 }
+
+/* @media screen and (max-width:768px) {
+    body {
+        height: 175vh;
+    }
+} */
